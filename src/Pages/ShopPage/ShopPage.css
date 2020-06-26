@@ -1,0 +1,208 @@
+section.shop-items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop-item {
+    flex: 0 50%;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 40px;
+    max-width: 540px;
+}
+
+.shop-item-info h2 {
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.shop-item-prices-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.shop-item-prices-row.summary {
+    border-top: 1px solid #B2B2B2;
+    padding-top: 5px;
+}
+
+.shop-item-prices-row.summary span:last-child {
+    color: #007E00;
+    font-size: 16px;
+}
+
+.shop-item-prices-row span:first-child {
+    text-align: left;
+    font: Bold Condensed 14px/19px Roboto;
+    font-weight: 300;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1;
+}
+
+.shop-item-quantity input {
+    width: 78px;
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 1.65;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    border: 1px solid #B2B2B2;
+    border-radius: 5px;
+}
+
+.shop-item-quantity span {
+    text-align: left;
+    font: Bold Condensed 16px/19px Roboto;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    opacity: 1;
+    margin-right: 10px;
+    float: left;
+}
+
+.shop-item-prices {
+    width: 210px;
+    margin-right: 50px;
+}
+
+.shop-item-add {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: flex-end;
+}
+
+.shop-item-add button {
+    width: 160px;
+    height: 30px;
+    border: 1px solid #007E00;
+    border-radius: 5px;
+    opacity: 1;
+    text-align: center;
+    font: Bold Condensed 14px/16px Roboto;
+    letter-spacing: 0;
+    color: #666666;
+    background: white;
+    margin-top: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.shop-item-image-wrapper {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.shop-item:nth-child(odd) {
+    margin-right: 120px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.quantity-arrows {
+    float: left;
+    position: relative;
+    height: 30px;
+}
+
+.quantity-button {
+    position: relative;
+    cursor: pointer;
+    width: 25px;
+    text-align: center;
+    color: #333;
+    line-height: 1.7;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.quantity-button.quantity-up {
+    position: absolute;
+    height: 50%;
+    top: 0;
+    border-bottom: 1px solid #eee;
+    background-image: url(../../assets/quantity-up.png);
+}
+
+.quantity-button.quantity-down {
+    position: absolute;
+    bottom: -1px;
+    height: 50%;
+    background-image: url(../../assets/quantity-down.png);
+}
+.shop-item-quantity {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 609px) {
+    .shop-item {
+        display: inline-block;
+        max-width: fit-content;
+        flex: none;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .shop-item:nth-child(odd) {
+        margin-right: 0;
+        background: #E5E5E5;
+    }
+
+    .shop-item-add {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .shop-item-image-wrapper {
+        margin-right: 0;
+        float: left;
+    }
+
+    .shop-item-prices {
+        width: 180px;
+        margin-right: 0;
+    }
+
+    .shop-item-info {
+        float: right;
+        max-width: 190px;
+    }
+
+    .e-shop-page.wrapper {
+        padding: 0;
+    }
+    .shop-item-quantity {
+        float: left;
+    }
+    .shop-item-add button {
+        float: right;
+        width: 130px;
+        margin-top: 0;
+        margin-left: 19px;
+    }
+    .shop-item-quantity span {
+        margin-top: 8px;
+        font: Bold Condensed 14px/16px Roboto;
+    }
+}

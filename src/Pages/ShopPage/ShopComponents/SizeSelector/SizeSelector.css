@@ -1,0 +1,23 @@
+.shop-item-size-selector input {
+    display: none;
+}
+
+.shop-item-size-selector label {
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border: 1px solid #007E00;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.shop-item-size-selector label:last-child {
+    margin-right: 0;
+}
+
+.shop-item-size-selector input[type="radio"]:checked + label {
+    background: #007E00 0 0 no-repeat padding-box;
+    color: white;
+    font-weight: bold;
+}

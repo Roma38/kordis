@@ -1,0 +1,23 @@
+.cookie-warning {
+  background-color: #ffd33a;
+  padding: 20px 0;
+  position: fixed;
+  z-index: 7;
+  bottom: 0;
+  width: 100%;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.cookie-warning > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cookie-warning .app-button {
+  margin-left: 15px;
+  color: #007e00;
+  border: none;
+  font-weight: 700;
+}

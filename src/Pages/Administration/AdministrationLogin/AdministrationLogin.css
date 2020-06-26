@@ -1,0 +1,11 @@
+.admin-page{
+    padding: 40px 0;
+}
+.admin-login-page .auth-card__wrapper {
+    margin: auto;
+}
+.admin-login-page .auth-card__wrapper .auth-card{
+    margin: auto;
+    width: 350px;
+    max-width: 550px;
+}

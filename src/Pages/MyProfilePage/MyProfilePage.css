@@ -1,0 +1,153 @@
+.horizontal-divider {
+  border-top: 1px solid #e5e5e5;
+}
+
+.symbol-button {
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  border: 1px solid #007e00;
+  background-color: white;
+  color: #007e00;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+.symbol-button__symbol {
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+}
+
+.symbol-button.symbol-button--danger {
+  color: #c63f3f;
+  border-color: #c63f3f;
+  font-size: 8px;
+  position: absolute;
+  right: 5%;
+}
+
+.symbol-button--danger .symbol-button__symbol {
+  bottom: unset;
+}
+
+.symbol-button-label {
+  margin-left: 5px;
+  color: #007e00;
+  vertical-align: super;
+}
+
+.plus-button-wrapper {
+  padding-top: 10px;
+}
+
+.discount-block {
+  display: flex;
+  align-items: center;
+}
+
+.discount-block__content {
+  flex-grow: 1;
+}
+
+.discount-block__delete-button {
+  margin: 0 25px;
+  cursor: pointer;
+}
+
+.profile-page__submit-button__wrapper {
+  margin-top: 30px;
+}
+
+.profile-page__picture__wrapper {
+  border-radius: 5px;
+  border: 1px solid #007e00;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  height: 200px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.profile-page__picture__icons {
+  position: absolute;
+  right: 10px;
+  bottom: 2px;
+}
+
+.profile-page__picture__icons img {
+  cursor: pointer;
+}
+
+.profile-page__picture__icons img:last-child {
+  position: relative;
+  top: 4px;
+  left: 5px;
+}
+
+.profile-page__picture {
+  display: flex;
+  align-items: flex-end;
+}
+
+.profile-page__picture .error-message {
+  text-align: left;
+}
+
+.profile-page .error-message {
+  color: #c63f3f;
+}
+
+.profile-page__radio-buttons {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.profile-page__radio-buttons>img, .profile-page__radio-buttons>div {
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.profile-page__radio-buttons .active {
+  text-decoration: underline;
+  color: #007e00;
+}
+
+.user-info-row {
+  display: flex;
+
+  align-items: center;
+}
+
+.user-info-row__text {
+  margin: 0 10px;
+}
+
+.user-info-row__text span{
+  font-weight: 300;
+}
+
+.user-info-row button {
+  margin-left:auto
+}
+
+@media(max-width: 450px) {
+  .profile-page__picture {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-page__picture__description, .profile-page__picture__description > .error-message {
+    text-align: center;
+  }
+
+  .profile-page {
+    box-sizing: border-box;
+      width: 100%;
+  }
+}

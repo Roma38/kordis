@@ -1,0 +1,367 @@
+.new-ticket-page.wrapper {
+  width: 100%; /* TODO: refactore */
+  box-sizing: border-box;
+  max-width: 1220px;
+}
+
+.accordion-body {
+  margin-bottom: 20px;
+}
+
+.new-ticket-page__wrapper {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.new-ticket-page__accordion {
+  flex-basis: 790px;
+}
+
+.new-ticket-page__accordion .accordion {
+  margin-top: 0;
+  border-bottom: 1px solid grey;
+}
+
+.new-ticket-page__accordion__section {
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #1a1a1a;
+  padding: 12px 10px 12px 20px;
+  background-color: #b2b2b2;
+  border-bottom: 1px solid grey;
+}
+
+.new-ticket-page__accordion .accordion__toggle {
+  transform: rotate(180deg)
+}
+
+.accordion.accordion--disabled {
+  background-color: #b2b2b2;
+}
+
+.accordion.accordion--disabled .accordion__toggle{
+  background: #1a1a1a url("../../assets/arrow_down_grey.png") no-repeat center;
+  transform: rotate(0);
+  cursor: initial
+}
+
+.accordion.accordion--active.accordion.accordion {
+  background-color: #ffd33a;
+}
+
+.accordion.accordion--active.accordion.accordion .accordion__text, .accordion.accordion--disabled .accordion__text {
+  color: #1a1a1a;
+}
+
+.accordion.accordion--active .accordion__toggle{
+  background: #1a1a1a url("../../assets/arrow_up_yellow.png") no-repeat center;
+  transform: rotate(0);
+}
+
+.accordion__body {
+  margin-bottom: 20px;
+}
+
+.new-ticket-page__card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.new-ticket-page__card-group__item {
+  flex-basis: 380px;
+  /* margin: 0 auto; */
+}
+
+.new-card-form {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #b2b2b2;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.date-divider {
+  height: 30px;
+  width: 2px;
+  background-color: black;
+  margin: 0 calc(5% - 2px);
+  transform: rotate(30deg);
+}
+
+/* Secondary accordion */
+
+.accordion--secondary.accordion {
+  opacity: 0.5;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.accordion--secondary__toggle {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  border: 1px solid #ffffff;
+  margin-right: 10px;
+}
+
+.accordion--secondary__toggle--active.accordion--secondary__toggle::after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  background-color: #ffffff;
+  border-radius: 100%;
+  margin: 2px;
+}
+
+.accordion--secondary .accordion__text {
+  font-size: 16px;
+}
+
+.accordion--secondary__body {
+  margin: 10px 0 10px 20px;
+}
+
+.subscription-extension-form {
+  border-radius: 10px;
+  border: 1px solid #ffd33a;
+  padding: 10px;
+  flex-wrap: wrap;
+
+}
+
+.subscription-extension-form > .col-50 {
+  flex-basis: 330px;
+  flex-grow: 1;
+
+}
+
+.subscription-extension-form h2 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.another-ticket-section > label {
+  color: #007e00;
+  display: block;
+  margin: 10px 0;
+}
+
+.interactive-map-wrapper {
+  overflow-x: auto;
+}
+
+.interactive-map-wrapper img {
+  max-width: 100%;
+}
+
+.payment-card-form {
+  max-width: 496px;
+  border-radius: 10px;
+  background-color: #e5e5e5;
+  padding: 20px;
+  margin: 20px auto 0;
+}
+
+.question-mark-badge {
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: #b2b2b2;
+  color: #666666;
+  text-align: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.payment-card-form a {
+  text-decoration: none;
+  color: #007e00;
+}
+
+.payment-card-form a:hover {
+  text-decoration: underline;
+}
+
+.payment-card-form a label {
+  cursor: pointer;
+}
+
+.app-button.app-button--primary.full-width {
+  width: 100%;
+}
+
+.card-icons-group {
+  margin: 0px 10% 20px;
+}
+
+.deep-accordion-section {
+  margin-left: 20px;
+}
+
+.subscription-extension-form .date-input-field {
+  width: calc(50% - 35px);
+}
+
+.subscription-extension-form .input-group.date-input img{
+  margin-left: 10px;
+}
+
+.another-ticket-section .input-group {
+  max-width: 503px;
+}
+
+.new-ticket-page .date-input img {
+  margin-left: auto;
+}
+
+.radio-group label{
+  font-weight: 300;
+  margin-right: 5%;
+  display: inline-block;
+}
+
+.radio-group b {
+  margin-right: 5%;
+}
+
+.need-advice-form .app-button {
+  margin-top: 8px;
+}
+
+.new-ticket-page .date-input .input-field.col-60 {
+  flex-basis: calc(60% - 35px);
+}
+
+.date-input .input-field.col-70 {
+  flex-basis: calc(70% - 35px);
+}
+
+.new-ticket-page .valid-ticket {
+  margin: 0 0 0 15px;
+}
+
+.valid-ticket__price {
+  color: #007e00;
+  font-size: 48px;
+}
+
+.time-select {
+  min-width: 90px;
+}
+
+.need-advice-form__columns {
+  flex-wrap: wrap;
+}
+
+.need-advice-form__columns .col-50 {
+  flex-basis: 340px;
+}
+
+/* Mobile ticket-preview */
+
+.mobile-ticket-preview {
+  display: none;
+}
+
+.mobile-ticket-preview .valid-ticket-zone-header, .mobile-ticket-preview h2{ 
+  margin: 0 0 8px;
+}
+
+.mobile-ticket-preview h2 { 
+  font-size: 14px;
+}
+
+.mobile-ticket-preview .valid-ticket-zone-header, .mobile-ticket-preview .valid-ticket-info-row span:first-child { 
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.mobile-ticket-preview .valid-ticket-user-date span:last-child,
+.mobile-ticket-preview .valid-ticket-info-row span:last-child,
+.mobile-ticket-preview .valid-ticket-info-row .carrier-link {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.mobile-ticket-preview .valid-ticket__price {
+  font-size: 18px;
+}
+
+.mobile-ticket-preview .valid-ticket-info-row {
+  margin: 0;
+}
+
+.mobile-ticket-preview .flex-wrapper {
+  align-items: flex-start;
+}
+
+@media(min-width: 600px) {
+  .new-ticket-page .form-section-header, .new-ticket-page__card-group__item__header {    
+    font-size: 16px;
+  }  
+}
+
+@media(max-width: 750px) {
+  .new-ticket-page .valid-ticket {
+    display: none;
+  }
+
+  .new-ticket-page .mobile-ticket-preview {
+    display: block;
+    position: fixed;
+    width: calc(100% - 40px);
+    background-color: #ffffff;
+    bottom: 0;
+    border-radius: 10px;
+    border: 1px solid #007e00;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 450px){
+  .subscription-extension-form .date-input-field, 
+  .new-ticket-page .date-input .input-field.col-60, 
+  .new-ticket-page .date-input .input-field.col-70 {
+    min-width: calc(100% - 35px);
+  }
+
+  .divided-date-selects .input-field.col-30 {
+    flex-basis: 45%;
+  }
+
+  .card-icons-group img {
+    height: 25px;
+  }
+}
+
+@media(max-width: 600px) {
+  .new-ticket-page {
+    font-size: 12px;
+  }
+
+  .accordion__text {
+    font-size: 18px;
+  }
+
+  .accordion--secondary__body {
+    margin-left: 10px;
+  }
+
+  .another-ticket-section .app-button {
+    width: 115px;
+  }
+
+  .radio-group label {
+    width: 100%;
+  }
+}

@@ -1,0 +1,88 @@
+.shop-payment-wrapper {
+    width: 1200px;
+}
+
+.payment-wrapper {
+    background: #E5E5E5 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #00000029;
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-payment-images-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card-payment-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.card-payment-row input {
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border: 1px solid #B2B2B2;
+    border-radius: 5px;
+    width: 330px;
+    height: 30px;
+    text-indent: 10px;
+}
+.card-payment-row input::placeholder {
+    font-style: italic;
+    color: #B2B2B2;
+    font-size: 14px;
+}
+
+.card-payment-row select {
+    border: 1px solid #B2B2B2;
+    border-radius: 5px;
+    background: url("../../../assets/quantity-down.png") white no-repeat right;
+    -webkit-appearance: none;
+    width: 150px;
+    height: 30px;
+    text-indent: 10px;
+    background-position-x: 115px;
+}
+
+.card-payment-row select ~ span {
+    display: inline-block;
+    font-size: 26px;
+    vertical-align: sub;
+    margin: 0 11px;
+}
+
+.card-payment-pay {
+    background: #007E00 0 0 no-repeat padding-box;
+    border: 1px solid #007E00;
+    border-radius: 5px;
+    font: Bold Condensed 14px/16px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 7px 0;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.card-payment-images-wrapper img {
+    width: 100%;
+}
+
+@media( max-width: 630px){
+    .shop-payment-wrapper{
+        width: 100%;
+    }
+    .payment-wrapper{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .card-payment-row{
+        flex-wrap: wrap;
+    }
+}

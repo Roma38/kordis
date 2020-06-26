@@ -1,0 +1,121 @@
+/*************** Registration Page *********************/
+.form-section-header {
+  color: #007e00;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.registration-form section {
+  max-width: 510px;
+}
+
+.registration-page .date-input, .profile-page .date-input {
+  position: relative;
+}
+
+.phone-input {
+  display: flex;
+}
+
+.code-select {
+  background-color: white;
+  width: 112px;
+}
+
+.phone-input input {
+  margin-left: 10px;
+  flex-grow: 1;
+  width: 160px;  
+}
+
+.file-input-alert {
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+.registration-form .wide-section {
+  max-width: initial;
+}
+
+.bottom-section {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.bottom-section .form-section-header {
+  margin: 10px 0;
+}
+
+.picture-placeholder {
+  width: 160px;
+  height: 206px;
+  border-radius: 5px;
+  border: 1px solid #007e00;
+  display: block;
+  background-image: url("../../assets/photo_placeholder.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.registration-page__picture-section {
+  display: flex;
+  align-items: flex-end;
+}
+
+.registration-page__picture-section .paragraph {
+  margin: 0 0 0 30px;
+}
+
+.picture-placeholder__plus-button {
+  width: 23px;
+  height: 23px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  background-color: #007e00;
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+@media(min-width: 960px) {
+  .registration-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .registration-form>.col-50:first-child {
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+
+  .registration-page .date-input img, .profile-page .date-input img {
+    position: absolute;
+    right: -23px;
+    top: 4px
+  }
+}
+
+@media(max-width: 960px) {
+  .date-input .input-field.col-60 {
+    flex-basis: calc(60% - 35px);
+  }
+
+  .date-input img{
+    margin-left: auto;
+  }
+}
+
+@media(max-width: 450px) {
+  .date-input .input-field.col-60 {
+    flex-basis: calc(100% - 35px);
+  }
+}

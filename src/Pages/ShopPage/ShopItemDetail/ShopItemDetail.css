@@ -1,0 +1,166 @@
+.shop-item-detail-top {
+    display: flex;
+}
+
+.shop-item-detail-images .image-gallery-image {
+    width: 440px;
+    height: 440px;
+}
+
+.shop-item-detail-info {
+    margin-left: 100px;
+    width: 540px;
+}
+
+.shop-item-detail-price {
+    display: flex;
+    justify-content: space-between;
+    background: #FFD33A 0 0 no-repeat padding-box;
+    height: 50px;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.shop-item-detail-price div {
+    font: Bold Condensed 22px/25px Roboto;
+}
+
+.shop-item-detail-price div span {
+    font: Bold Condensed 12px/16px Roboto;
+    font-weight: 300;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    margin-right: 15px;
+}
+
+.shop-item-detail-info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.shop-item-detail .shop-item-quantity {
+    display: contents;
+}
+
+.shop-item-detail .shop-item-add {
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.shop-item-detail .shop-item-add button {
+    margin-top: 0;
+}
+
+.shop-item-detail .shop-item-add span {
+    font: Bold Condensed 12px/16px Roboto;
+    font-weight: 300;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    margin-right: 20px;
+}
+
+.shop-item-detail-info-row.postage span:first-child {
+    font: Bold Condensed 14px/19px Roboto;
+    font-weight: 300;
+    letter-spacing: 0;
+    color: #1A1A1A;
+}
+
+.shop-item-detail-content {
+    font: Bold Condensed 14px/19px Roboto;
+    font-weight: 300;
+    letter-spacing: 0;
+    color: #1A1A1A;
+    margin-top: 20px;
+}
+.image-gallery-thumbnail.active, .image-gallery-thumbnail:hover, .image-gallery-thumbnail:focus {
+    outline: none;
+    border: 1px solid #007E00;
+    border-radius: 10px;
+}
+.image-gallery-thumbnail {
+    cursor: pointer;
+}
+.image-gallery-thumbnails-wrapper.left, .image-gallery-thumbnails-wrapper.right {
+    margin: 0 0 0 10px;
+}
+
+@media( max-width: 630px){
+    .shop-item-detail-top{
+        display: block;
+    }
+    .shop-item-detail-info{
+        width: 100%;
+        margin-left: 0;
+    }
+    .page-header{
+        font-size: 26px;
+    }
+    .image-gallery-slide-wrapper.left, 
+    .image-gallery-slide-wrapper.right{
+        width: 100%;
+        height: 100px !important;
+
+    }
+    .image-gallery-thumbnails-wrapper.left .image-gallery-thumbnails, 
+    .image-gallery-thumbnails-wrapper.right .image-gallery-thumbnails{
+        width: auto;
+        top: 10px;
+    }
+    .image-gallery-thumbnails-wrapper.left .image-gallery-thumbnails .image-gallery-thumbnail,
+    .image-gallery-thumbnails-wrapper.right .image-gallery-thumbnails .image-gallery-thumbnail{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .shop-item-detail-price div {
+        font: 18px/24px Roboto Condensed;
+        font-family: "Roboto",sans-serif;
+        font-weight: bold;
+    }
+    
+    .shop-item-detail-price div span {
+        font: Bold Condensed 8px/10px Roboto;
+        font-family: "Roboto",sans-serif;
+        font-weight: 300;
+        letter-spacing: 0;
+        color: #1A1A1A;
+        margin-right: 15px;
+    }
+    .shop-item-detail-images .image-gallery-image{
+        width: 100%;
+        height: auto;
+    }
+    .shop-item-detail-info-row{
+        padding: 0;
+    }
+    .shop-item-detail-info-row > span{
+        font-size: 16px;
+    }
+    .shop-item-quantity span{
+        font:Bold Condensed 16px/21px Roboto;
+    }
+    .shop-item-detail .shop-item-add{
+        display: table;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .shop-item-detail .shop-item-add span{
+        text-align: right;
+        display: block;
+        margin-right: 0;
+    }
+    .shop-item-detail .shop-item-add button{
+        margin-top: 15px;
+    }
+    .shop-item-detail-content{
+        font: Bold Condensed 12px/16px Roboto;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+}

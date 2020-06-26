@@ -1,0 +1,231 @@
+.my-messages-page.wrapper {
+    width: 100%;
+    max-width: 1220px;
+    box-sizing: border-box;
+}
+
+/* General table style */
+.table-light {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: left;
+    overflow: hidden;
+}
+
+.table-light thead > tr:last-child {
+    border-bottom: 1px solid #B2B2B2;
+}
+
+.table-light tbody tr:nth-child(even) {
+    background-color: #E5E5E5;
+}
+
+.table-light th,
+.table-light td {
+    padding: 12px 11px 11px;
+    font-size: 14px;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-light th {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+}
+
+.table-light td {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.table-light thead th,
+.table-light thead td {
+    padding: 0 11px 14px 11px;
+}
+
+.table-light thead th:first-child,
+.table-light thead td:first-child {
+    padding-left: 0;
+}
+
+/* Table Messages specific style */
+.table-messages .col-datetime {
+    width: 175px;
+}
+
+.table-messages .col-sender {
+    width: 10%;
+}
+
+.table-messages .col-subject {
+    width: 18%;
+}
+
+.table-messages .col-preview {
+    width: calc( 72% - 175px - 70px );
+}
+
+.table-messages .col-actions {
+    box-sizing: border-box;
+    width: 92px;
+}
+
+.table-messages .col-actions > :last-child {
+   margin-left: 20px;
+}
+
+.table-messages tbody tr {
+    cursor: pointer;
+}
+
+.table-messages td.no-data {
+    cursor: default;
+    text-align: center;
+    font-weight: 700;
+}
+
+.table-messages tr.unread td {
+    font-weight: 700;
+}
+
+.table-messages .time {
+    margin-left: 0.75em;
+}
+
+/* Message detail */
+.my-messages-detail {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+.message-header {
+    position: relative;
+    padding: 20px 35px 10px 0;
+    border-top: 1px solid #b2b2b2;
+    border-bottom: 1px solid #b2b2b2;
+    margin-bottom: 20px;
+}
+
+.message-header-row {
+    margin-bottom: 10px;
+}
+
+.message-header-row strong {
+    display: inline-block;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    min-width: 150px;
+    padding-right: .75em;
+    box-sizing: border-box;
+}
+
+.message-header-remove {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+.message-header-remove img {
+    vertical-align: middle;
+}
+
+.message-content {
+    padding-bottom: 10px;
+}
+
+@media ( max-width: 991px ) {
+    .table-light,
+    .table-light tbody,
+    .table-light tr,
+    .table-light th,
+    .table-light td {
+        display: block;
+    }
+
+    .table-light thead,
+    .table-light tfoot {
+        display: none;
+    }
+
+    .table-light tr {
+        position: relative;
+        padding: 4px 5px;
+    }
+
+    .table-light th,
+    .table-light td {
+        padding: 3px 0;
+        font-size: 12px;
+    }
+
+
+    .table-messages .col-datetime {
+        float: left;
+        width: auto;
+        min-width: 65px;
+        margin-right: 10px;
+    }
+
+    .table-messages .col-datetime .time {
+        display: none;
+    }
+
+    .table-messages .col-sender {
+        width: auto;
+        padding-right: 52px;
+    }
+
+    .table-messages .col-subject,
+    .table-messages .col-preview {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .table-messages .col-preview {
+        font-size: 11px;
+    }
+
+    .table-messages .col-actions {
+        position: absolute;
+        top: 4px;
+        right: 5px;
+        width: 42px;
+    }
+
+    .table-messages .col-actions > :last-child {
+        margin-left: 10px;
+    }
+
+    .table-messages .col-actions img {
+        width: 16px;
+        height: auto;
+    }
+
+
+    .my-messages-detail {
+        font-size: 12px;
+    }
+
+    .message-header {
+        padding: 12px 0 10px 0;
+    }
+
+    .message-header-row strong {
+        font-size: 14px;
+    }
+
+    .message-header-row {
+        margin-bottom: 12px;
+    }
+
+    .message-header-remove {
+        position: static;
+        text-align: right;
+    }
+}

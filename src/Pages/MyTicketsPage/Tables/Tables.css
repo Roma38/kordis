@@ -1,0 +1,139 @@
+.table-filter {
+  background-color: #007e0026;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.table-filter .cross-button {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.table-filter .input-group label {
+  margin-right: 10px;
+}
+
+.table-filter .input-group img {
+  margin-left: 10px;
+}
+
+.table__last-col {
+  max-width: 150px;
+  text-align: right;
+}
+
+.table__last-col a, .regular-link{
+ display: block;
+ color: #007e00;
+ font-size: 12px;
+}
+
+.table__legend {
+  margin: 12px 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.table--common {
+  margin-bottom: 10px;
+}
+
+.table thead {
+  text-align: left;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+.table td {
+  padding: 5px 10px;
+}
+
+.table th{
+  padding: 10px 10px;
+}
+
+.table__row--pink {
+  background-color: rgba(198, 63, 63, 0.18);
+}
+
+.table__row--yellow {
+  background-color: #ffe99d;
+}
+
+.table--first .table__last-col {
+  margin-left: 60px;
+}
+
+.small-square {
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+
+.small-square--pink {
+  background-color: rgba(198, 63, 63, 0.18);
+}
+
+.small-square--yellow {
+  background-color: #ffe99d;
+}
+
+.table__row--grey {
+  background-color: #e9e9e9;
+}
+
+.table__row--canceled .flex-wrapper {
+  border-top: 1px solid #b2b2b2;
+  padding-top: 5px;
+}
+
+.table__row--canceled .table__row__warninng {
+  color: #c63f3f;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  flex-grow: 3;
+  text-align: left;
+}
+
+.table__row--canceled span, .table__row--canceled a {
+  flex-grow: 1;
+  text-align: right;
+}
+
+@media(max-width: 600px) {
+  .table-filter.flex-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .table-filter.flex-wrapper label {
+    min-width: 55px;
+  }
+
+  .table-filter .input-group {
+    width: 100%;
+  }
+
+  .table-filter .input-field {
+    flex-grow: 1;
+  }
+
+  .table-filter .input-field.input-field--date {
+    flex-grow: 0;
+  }
+
+  .table-filter .cross-button {
+    align-self: center;
+  }
+}

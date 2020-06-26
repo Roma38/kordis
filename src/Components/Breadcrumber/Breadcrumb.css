@@ -1,0 +1,33 @@
+.breadcrumb {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  position: relative;
+}
+
+
+.breadcrumb__item {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 17px;
+  font-weight: 700;
+}
+
+.breadcrumb li:last-child .breadcrumb__item {
+  color: #1a1a1a;
+  font-weight: 300;
+}
+
+.breadcrumb__arrow {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.breadcrumb li:last-child .breadcrumb__arrow {
+  display: none;
+}

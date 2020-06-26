@@ -1,0 +1,108 @@
+.card-form {
+  margin: 20px 0 10px;
+  width: 300px;
+  height: 191px;
+  border-radius: 10px;
+  background-size: contain;
+  position: relative;
+}
+
+.card-form label {
+  font-size: 12px;
+  font-weight: 300;
+  position: absolute;
+  top: 52px;
+  right: 5px;
+}
+
+.card-form .input-field, .card-form .input-chain input[type=number] {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card-form__title {
+  width: 192px;
+}
+
+.card-form .input-chain {
+  position: absolute;
+  font-size: 14px;
+  top: 85px;
+  right: 5px;
+}
+
+.input-chain--card-number .input-field{
+  width: 50px;
+}
+
+.card-form .input-chain.input-chain--date {
+  position: absolute;
+  top: 118px;
+  right: 30px;
+}
+
+.card-form .owner-name {
+  position: absolute;
+  top: 151px;
+  left: 20px;
+}
+
+.card-form .owner-name input:first-child { 
+  width: 90px;
+  margin-right: 10px;
+}
+
+.card-form .owner-name input:last-child { 
+  width: 130px;
+}
+
+.card-back-code {
+  width: 60px;
+  position: absolute;
+  top: 40%;
+  right: 25%; 
+}
+
+/* Background picture's */
+
+.air-bank {
+  background-image: url(../../assets/air-bank-card.png);
+}
+
+.moneta-bank{
+  background-image: url(../../assets/moneta_card.png);
+}
+
+.air-bank-back {
+  background-image: url(../../assets/air-bank_back.png);
+}
+/* ****************** */
+
+@media(min-width: 450px) {
+  .card-form {
+    height: 242px;
+    width: 380px;
+  }
+
+  .card-form label {
+    top: 68px;
+    right: 18px;
+  }
+
+  .card-form .input-chain {
+    position: absolute;
+    font-size: 14px;
+    top: 139px;
+    right: 90px;
+  }
+
+  .card-form .input-chain.input-chain--date {
+    top: 172px;
+    right: 114px;
+  }
+
+  .card-form .owner-name {
+    top: 205px;
+    left: 20px;
+  }
+}

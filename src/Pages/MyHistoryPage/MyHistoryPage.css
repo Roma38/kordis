@@ -1,0 +1,121 @@
+.my-history-page.wrapper {
+    width: 100%;
+    max-width: 1220px;
+    box-sizing: border-box;
+}
+
+.my-history-page .page-section-header.history-table-title {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+.page-section-header {
+    text-transform: uppercase;
+}
+
+.my-history-page .accordion {
+    margin-top: 10px;
+}
+
+.table-history {
+    table-layout: auto;
+}
+
+.table-history td {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.table-history tbody tr:nth-child(even) {
+    background-color: #E5E5E5;
+}
+.table-history tbody tr.deleted + tr {
+    background-color: white;
+}
+
+.table-history tbody tr.deleted ~ tr:nth-child(odd) {
+    background-color: #E5E5E5;
+}
+
+.table-history tbody td span {
+    display: block;
+}
+
+.table-history td.col-title {
+    font-weight: 700;
+}
+
+.table-data-changes-history td.col-activity {
+    width: 90%;
+}
+
+.table-history td.col-carrier {
+    width: 25%;
+}
+
+.table-history td.col-invoice {
+    width: 15%;
+}
+@media ( max-width: 991px ) {
+    .table-wrapper {
+        overflow-x: auto;
+    }
+    .table-light {
+        display: table;
+    }
+    .table-light tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+    .table-light tr {
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit;
+    }
+    .table-light th {
+        display: table-cell;
+        vertical-align: inherit;
+        font-weight: bold;
+        text-align: left;
+    }
+    .table-light td {
+        display: table-cell;
+        vertical-align: inherit;
+    }
+
+    .table-light thead {
+        display: table-header-group;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+    .table-light tfoot {
+        display: table-footer-group;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+
+    .table-light tr {
+        position: relative;
+        padding: 4px 5px;
+    }
+
+    .table-light th,
+    .table-light td {
+        padding: 12px 11px 11px;
+        font-size: 14px;
+    }
+
+}
+@media ( max-width: 768px ){
+
+    .table-filter .input-group label {
+        margin-right: 0;
+        display: inline-block;
+        width: 70px;
+        text-align: left;
+    }
+    .table-filter .cross-button {
+        width: 100%;
+        text-align: center;
+    }
+}
